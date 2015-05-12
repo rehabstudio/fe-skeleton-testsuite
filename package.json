@@ -2,11 +2,12 @@
     "name": "fe-skeleton-testsuite",
     "version": "1.0.0",
     "description": "A wrapper for the test suite of the rehabstudio front-end skeleton.",
+    "homepage": "https://github.com/rehabstudio/fe-skeleton-testsuite",
     "main": "src/index.js",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "git@github.com:rehabstudio/fe-skeleton-testsuite.git"
     },
     "author": {
         "name": "Anthony Hastings",
@@ -31,4 +32,4 @@
         "karma-junit-reporter": "^0.2.2",
         "karma-browserify": "^3.0.3"
     }
-} 
+}
