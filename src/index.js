@@ -16,7 +16,7 @@ module.exports = {
             if (typeof(resolveFn) === 'function') {
                 resolveFn(exitCode);
             } else {
-                process.exit(exitCode)
+                process.exit(exitCode);
             }
         });
     }
