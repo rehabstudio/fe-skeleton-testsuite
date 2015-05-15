@@ -4,7 +4,7 @@
 This package is to be used in conjunction with the rehabstudio [front-end skeleton](https://github.com/rehabstudio/fe-skeleton). It plugs directly into the skeletons `test` method. By default, it comes ready to serve tests via Karma as a test runner, Mocha as a test framework, Chai as an assertion library and Sinon as a mocks/spies library.
 
 ## Installation
-```npm install rehab-rehab-fe-skeleton-testsuite --save-dev```
+```npm install rehab-fe-skeleton-testsuite --save-dev```
 
 ## Usage
 Simply call the `runTests` method of this module with your desired parameters. It maps directly into `karma.server.start` with your parameters and a callback method to run once the test suite has finished running. The parameters should be based upon those found directly in Karmas [configuration page](http://karma-runner.github.io/0.12/config/configuration-file.html) and for [those specific](https://github.com/karma-runner/karma/blob/master/lib/server.js#L281) to the karma.server.start method.
