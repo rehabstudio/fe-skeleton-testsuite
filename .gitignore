@@ -20,3 +20,4 @@ node_modules
 .lock-wscript
 docs/_build/doctrees/environment.pickle
 fe-test-results.xml
+fe-coverage-results.xml

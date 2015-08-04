@@ -15,7 +15,23 @@ var karmaSettings = {
     files: [
         './tests/*.spec.js'
     ],
-    reporters: ['progress'],
+    preprocessors: {
+        './tests/*.spec.js': ['browserify']
+    },
+    browserify: {
+        transform: [
+            [require('browserify-istanbul'), { ignore: ['**/node_modules/**', '**/bower_components/**', '**/*.spec.js'], defaultIgnore: false }]
+        ],
+        watch: false
+    },
+    coverageReporter: {
+        dir: './',
+        reporters: [
+            { type: 'cobertura', subdir: '.', file: 'fe-coverage-results.xml' },
+            { type: 'text' }
+        ]
+    },
+    reporters: ['progress', 'coverage'],
     port: 9876,
     colors: true,
     autoWatch: false,
