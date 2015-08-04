@@ -1,6 +1,6 @@
 {
     "name": "rehab-fe-skeleton-testsuite",
-    "version": "1.1.0",
+    "version": "2.0.0",
     "description": "A wrapper for the test suite of the rehabstudio front-end skeleton.",
     "homepage": "https://github.com/rehabstudio/fe-skeleton-testsuite",
     "main": "src/index.js",
@@ -21,17 +21,16 @@
         "test": "node tests/test.js"
     },
     "dependencies": {
-        "chai": "^2.3.0",
+        "chai": "^3.2.0",
         "mocha": "^2.2.5",
-        "sinon": "^1.14.1",
-        "karma": "^0.12.31",
+        "sinon": "^1.15.4",
+        "karma": "^0.13.4",
         "karma-chai": "^0.1.0",
-        "karma-mocha": "^0.1.10",
+        "karma-mocha": "^0.2.0",
         "karma-sinon": "^1.0.4",
-        "karma-phantomjs-launcher": "^0.1.4",
-        "karma-junit-reporter": "^0.2.2",
-        "karma-browserify": "^4.1.2",
+        "karma-phantomjs-launcher": "^0.2.0",
+        "karma-browserify": "^4.2.1",
         "browserify-istanbul": "^0.2.1",
-        "karma-coverage": "^0.3.1"
+        "karma-coverage": "^0.4.2"
     }
 }

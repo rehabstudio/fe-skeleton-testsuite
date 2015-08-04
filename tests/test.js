@@ -15,10 +15,7 @@ var karmaSettings = {
     files: [
         './tests/*.spec.js'
     ],
-    junitReporter: {
-        outputFile: './fe-test-results.xml'
-    },
-    reporters: ['progress', 'junit'],
+    reporters: ['progress'],
     port: 9876,
     colors: true,
     autoWatch: false,
@@ -27,6 +24,7 @@ var karmaSettings = {
 };
 
 // Test call to the test suite wrapper.
-testSuiteWrapper.runTests(karmaSettings, function() {
-	console.log('Callback called.');
+testSuiteWrapper.runTests(karmaSettings, function(exitCode) {
+    console.log('Callback called.');
+    console.log('Karma Exit Code:', exitCode);
 });

@@ -12,12 +12,14 @@ module.exports = {
      *  @param {function} resolveFn - Gulp async function.
      */
     runTests: function(karmaSettings, resolveFn) {
-        karma.server.start(karmaSettings, function(exitCode) {
+        var testServer = new karma.Server(karmaSettings, function(exitCode) {
             if (typeof(resolveFn) === 'function') {
                 resolveFn(exitCode);
             } else {
                 process.exit(exitCode);
             }
         });
+
+        testServer.start();
     }
 };
