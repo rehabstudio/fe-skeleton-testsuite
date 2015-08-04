@@ -24,10 +24,7 @@ var karmaSettings = {
     files: [
         './tests/*.spec.js'
     ],
-    junitReporter: {
-        outputFile: './fe-test-results.xml'
-    },
-    reporters: ['progress', 'junit'],
+    reporters: ['progress'],
     port: 9876,
     colors: true,
     autoWatch: false,
