@@ -18,7 +18,7 @@ var karmaSettings = {
     ],
 
     files: [
-        './tests/*.spec.js'
+        './tests/passing.spec.js'
     ],
 
     preprocessors: {
@@ -40,8 +40,35 @@ var karmaSettings = {
     singleRun: true
 };
 
-// Test call to the test suite wrapper.
-testSuiteWrapper.runTests(karmaSettings, function(exitCode) {
+// Test passing calls to the test suite wrapper.
+testSuiteWrapper.runTests(karmaSettings, function(passingExitCode) {
     console.log('Callback called.');
-    console.log('Karma Exit Code:', exitCode);
+    console.log('Karma Exit Code:', passingExitCode);
+    console.log('At this stage the code should be 0');
+
+    if (passingExitCode !== 0) {
+        console.log('Test Wrapper Fail: Success exit code is incorrect!');
+        process.exit(1);
+    } else {
+        console.log('Test Wrapper Success: Success exit code is correct.');
+    }
+
+    // Overriding the files array so it loads the failing tests.
+    karmaSettings.files = [
+        './tests/failing.spec.js'
+    ];
+
+    // Test failing calls to the test suite wrapper.
+    testSuiteWrapper.runTests(karmaSettings, function(failingExitCode) {
+        console.log('Callback called.');
+        console.log('Karma Exit Code:', failingExitCode);
+        console.log('At this stage the code should be something higher than zero.');
+
+        if (failingExitCode <= 0) {
+            console.log('Test Wrapper Fail: One of the exit codes was incorrect!');
+            process.exit(1);
+        } else {
+            console.log('Test Wrapper Success: Failure exit code is correct.');
+        }
+    });
 });

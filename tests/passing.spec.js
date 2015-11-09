@@ -2,7 +2,7 @@
 
 var exampleModule = require('./example-module');
 
-describe('Dummy tests', function() {
+describe('Passing tests', function() {
 
     it('should be true', function() {
         expect(exampleModule.isGreaterThan(10, 5)).to.be.true;
