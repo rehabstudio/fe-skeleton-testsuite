@@ -1,6 +1,6 @@
 'use strict';
 
-var exampleModule = require('../tests/example-module');
+var exampleModule = require('./example-module');
 
 describe('Dummy tests', function() {
 

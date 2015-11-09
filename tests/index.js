@@ -5,37 +5,38 @@ var testSuiteWrapper = require('../src/index.js');
 
 // Dummy Karma settings.
 var karmaSettings = {
-    basePath: '',
     client: {
         mocha: {
             timeout: 8000
         }
     },
-    frameworks: ['mocha', 'browserify', 'chai', 'sinon'],
+
+    frameworks: [
+        'mocha',
+        'chai',
+        'sinon'
+    ],
+
     files: [
         './tests/*.spec.js'
     ],
+
     preprocessors: {
-        './tests/*.spec.js': ['browserify']
+        './tests/*.spec.js': ['webpack']
     },
-    browserify: {
-        transform: [
-            [require('browserify-istanbul'), { ignore: ['**/node_modules/**', '**/bower_components/**', '**/*.spec.js'], defaultIgnore: false }]
-        ],
-        watch: false
-    },
-    coverageReporter: {
-        dir: './',
-        reporters: [
-            { type: 'cobertura', subdir: '.', file: 'fe-coverage-results.xml' },
-            { type: 'text' }
-        ]
-    },
-    reporters: ['progress', 'coverage'],
+
+    reporters: [
+        'progress'
+    ],
+
+    browsers: [
+        'PhantomJS'
+    ],
+
     port: 9876,
-    colors: true,
+
     autoWatch: false,
-    browsers: ['PhantomJS'],
+
     singleRun: true
 };
 
