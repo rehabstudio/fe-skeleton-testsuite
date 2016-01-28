@@ -1,37 +1,37 @@
 {
-    "name": "rehab-fe-skeleton-testsuite",
-    "version": "3.0.3",
-    "description": "A wrapper for the test suite of the rehabstudio front-end skeleton.",
-    "homepage": "https://github.com/rehabstudio/fe-skeleton-testsuite",
-    "main": "src/index.js",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:rehabstudio/fe-skeleton-testsuite.git"
-    },
-    "author": {
-        "name": "Anthony Hastings",
-        "email": "anthony@rehabstudio.com"
-    },
-    "keywords": [
-        "Front-end skeleton",
-        "Test suite",
-        "rehabstudio"
-    ],
-    "scripts": {
-        "test": "node tests/index.js"
-    },
-    "dependencies": {
-        "chai": "3.4.1",
-        "mocha": "2.3.3",
-        "sinon": "1.17.2",
-        "karma": "0.13.19",
-        "karma-chai": "0.1.0",
-        "karma-mocha": "0.2.0",
-        "karma-phantomjs-launcher": "0.2.1",
-        "karma-sinon": "1.0.4",
-        "karma-webpack": "1.7.0",
-        "phantomjs": "1.9.18",
-        "webpack-stream": "2.1.1"
-    }
+  "name": "rehab-fe-skeleton-testsuite",
+  "version": "4.0.0",
+  "description": "Wrapper for the rehabstudio front-end skeleton test suite.",
+  "homepage": "https://github.com/rehabstudio/fe-skeleton-testsuite",
+  "main": "src/index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rehabstudio/fe-skeleton-testsuite.git"
+  },
+  "author": {
+    "name": "Anthony Hastings",
+    "email": "anthony@rehabstudio.com"
+  },
+  "keywords": [
+    "Front-end skeleton",
+    "Test suite",
+    "rehabstudio"
+  ],
+  "scripts": {
+    "test": "node tests/index.js"
+  },
+  "dependencies": {
+    "chai": "3.4.1",
+    "mocha": "2.4.4",
+    "sinon": "1.17.3",
+    "karma": "0.13.19",
+    "karma-chai": "0.1.0",
+    "karma-mocha": "0.2.1",
+    "karma-phantomjs-launcher": "1.0.0",
+    "karma-sinon": "1.0.4",
+    "karma-webpack": "1.7.0",
+    "phantomjs-prebuilt": "2.1.3",
+    "webpack-stream": "3.1.0"
+  }
 }

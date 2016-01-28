@@ -40,17 +40,17 @@ var karmaSettings = {
     singleRun: true
 };
 
-// Test passing calls to the test suite wrapper.
+// Run Karma to build and test a webpack bundle with a 'passing' test.
 testSuiteWrapper.runTests(karmaSettings, function(passingExitCode) {
     console.log('Callback called.');
     console.log('Karma Exit Code:', passingExitCode);
     console.log('At this stage the code should be 0');
 
     if (passingExitCode !== 0) {
-        console.log('Test Wrapper Fail: Success exit code is incorrect!');
+        console.log('Test Wrapper: "Success" exit code NOT sent as expected!');
         process.exit(1);
     } else {
-        console.log('Test Wrapper Success: Success exit code is correct.');
+        console.log('Test Wrapper: "Success" exit code sent as expected.');
     }
 
     // Overriding the files array so it loads the failing tests.
@@ -58,17 +58,17 @@ testSuiteWrapper.runTests(karmaSettings, function(passingExitCode) {
         './tests/failing.spec.js'
     ];
 
-    // Test failing calls to the test suite wrapper.
+    // Re-run Karma to build and test a webpack bundle with a 'failing' test.
     testSuiteWrapper.runTests(karmaSettings, function(failingExitCode) {
         console.log('Callback called.');
         console.log('Karma Exit Code:', failingExitCode);
-        console.log('At this stage the code should be something higher than zero.');
 
+        // At this stage the code should be something higher than zero.
         if (failingExitCode <= 0) {
-            console.log('Test Wrapper Fail: One of the exit codes was incorrect!');
+            console.log('Test Wrapper: "Failure" code NOT sent as expected!');
             process.exit(1);
         } else {
-            console.log('Test Wrapper Success: Failure exit code is correct.');
+            console.log('Test Wrapper: "Failure" exit code sent as expected.');
         }
     });
 });
