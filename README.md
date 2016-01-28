@@ -1,3 +1,5 @@
+[![NPM version](https://badge.fury.io/js/rehab-fe-skeleton-testsuite.png)](https://badge.fury.io/js/rehab-fe-skeleton-testsuite)
+
 # Front-end Skeleton Test Suite
 
 ## Introduction
