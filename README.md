@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/rehabstudio/fe-skeleton-testsuite.svg?branch=master)](https://travis-ci.org/rehabstudio/fe-skeleton-testsuite)
 [![NPM version](https://badge.fury.io/js/rehab-fe-skeleton-testsuite.png)](https://badge.fury.io/js/rehab-fe-skeleton-testsuite)
 
 # Front-end Skeleton Test Suite
