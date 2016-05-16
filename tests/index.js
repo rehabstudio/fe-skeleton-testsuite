@@ -26,7 +26,7 @@ var karmaSettings = {
     },
 
     reporters: [
-        'progress',
+        'progress'
     ],
 
     browsers: [
