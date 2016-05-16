@@ -27,14 +27,7 @@ var karmaSettings = {
 
     reporters: [
         'progress',
-        'junit'
     ],
-
-    junitReporter: {
-        outputDir: './test-results',
-        outputFile: 'results.xml',
-        useBrowserName: false
-    },
 
     browsers: [
         'PhantomJS'
