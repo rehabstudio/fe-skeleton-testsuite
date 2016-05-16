@@ -47,8 +47,15 @@ var karmaSettings = {
     },
 
     reporters: [
-        'progress'
+        'progress',
+        'junit'
     ],
+
+    junitReporter: {
+        outputDir: './test-results',
+        outputFile: 'results.xml',
+        useBrowserName: false
+    },
 
     browsers: [
         'PhantomJS'
@@ -106,8 +113,15 @@ var karmaSettings = {
     },
 
     reporters: [
-        'progress'
+        'progress',
+        'junit'
     ],
+
+    junitReporter: {
+        outputDir: './test-results',
+        outputFile: 'results.xml',
+        useBrowserName: false
+    },
 
     browsers: [
         'PhantomJS'

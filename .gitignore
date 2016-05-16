@@ -19,5 +19,5 @@ build/Release
 node_modules
 .lock-wscript
 docs/_build/doctrees/environment.pickle
-fe-test-results.xml
+test-results/
 fe-coverage-results.xml
