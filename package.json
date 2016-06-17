@@ -1,6 +1,6 @@
 {
   "name": "rehab-fe-skeleton-testsuite",
-  "version": "4.1.0",
+  "version": "4.2.0",
   "description": "Wrapper for the rehabstudio front-end skeleton test suite.",
   "homepage": "https://github.com/rehabstudio/fe-skeleton-testsuite",
   "main": "src/index.js",
