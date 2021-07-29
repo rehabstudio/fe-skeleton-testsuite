@@ -32,7 +32,7 @@
     "karma-sinon": "1.0.5",
     "karma-webpack": "1.7.0",
     "mocha": "2.5.3",
-    "phantomjs-prebuilt": "2.1.7",
+    "phantomjs-prebuilt": "2.1.16",
     "sinon": "1.17.4",
     "webpack-stream": "3.2.0"
   }
